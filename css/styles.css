@@ -17,6 +17,7 @@ a{
     text-decoration: none;
 }
 
+
 /* NAV MENU */
 
 .nav__toogleMenu{
@@ -52,7 +53,7 @@ a{
 }
 
 .nav__nombre a{
-    color: white
+    color: white;
 }
 
 .nav__menu{
@@ -87,6 +88,27 @@ a{
     display: none;
 }
 
+/* FOOTER */
+
+.footer__contacto{
+    height: 10vh;
+    background: linear-gradient(to top,rgb(219, 181, 237),rgb(170, 11, 244));
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__contacto a{
+    color: white;
+    font-size: 3vh;
+}
+
+.footer__contacto a:hover{
+    background-color: rgb(230, 20, 234);
+}
+
 /* LAYOUT */
 
 .gridLayout{
@@ -103,7 +125,7 @@ a{
 .header__container{
     grid-area: header;
     width: 100vw;
-    background-color: #ab49cc;
+    background: linear-gradient(to bottom,rgb(219, 181, 237),rgb(170, 11, 244));
     position: fixed;
 }
 
@@ -273,23 +295,6 @@ a{
     align-items: center;
 }
 
-/* FOOTER */
-
-.footer__contacto{
-    height: 10vh;
-    background-color: #ab49cc;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__contacto a{
-    color: white;
-    font-size: 3vh;
-}
- 
 /* DESKTOP VIEW */
 
 @media only screen and (min-width: 1024px){
@@ -313,6 +318,23 @@ a{
         gap: 1rem;
         background-color: rgb(0, 0, 0, 0);
     }
+    .nav__menu li a:hover{
+        background-color: rgb(230, 20, 234);
+    }
+    .nav__nombre a:hover{
+        animation-name: cambioColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes cambioColor {
+        0%{ color: rgb(211, 24, 221);}
+        25%{ color: rgb(13, 55, 161);}
+        50%{ color: rgb(241, 150, 13);}
+        75%{ color: rgb(240, 13, 13);}
+        100%{ color: rgb(195, 195, 14);}
+    }
+
     /* INDEX */
     .index__container{
         display: grid;
