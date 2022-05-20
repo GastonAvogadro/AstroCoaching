@@ -1,0 +1,24 @@
+#nav__background{
+    background-color: #9b6ef1;
+}
+
+#index__main{
+    margin-top: 5vh;
+}
+
+#index__cards{
+    margin: 0rem 1rem;
+    margin-bottom: 2rem;
+}
+
+#card__1, #card__2, #card__3, #card__4{
+    background-color: #9b6ef1;
+}
+
+#about__text{
+    text-align:justify;
+}
+
+#about__title{
+    margin: 2rem;
+}
