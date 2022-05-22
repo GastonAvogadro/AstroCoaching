@@ -6,7 +6,7 @@
     margin-top: 5vh;
 }
 
-#index__cards{
+#index__cards, #servicios__cards{
     margin: 0rem 1rem;
     margin-bottom: 2rem;
 }
@@ -20,5 +20,14 @@
 }
 
 #about__title{
-    margin: 2rem;
+    margin: 5vh;
+}
+
+#contact__form{
+    max-width: 700px;
+    margin-bottom: 4vh;
+}
+
+#blog__1, #blog__2, #blog__3, #blog__4, #blog__5, #blog__6{
+    background-color: #9b6ef1;
 }
