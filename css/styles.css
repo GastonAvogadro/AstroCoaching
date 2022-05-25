@@ -1,6 +1,40 @@
+/* NAV MENU */
+
 #nav__background{
     background-color: #9b6ef1;
 }
+
+#header__nav li a, #header__nav li a:after, #header__nav li a:before{
+    transition: all .4s;
+}
+
+#header__nav li a:hover{
+    color: rgb(50, 48, 48);
+}
+
+#header__nav li a{
+    position: relative;
+    color: rgb(250, 247, 247);
+}
+
+#header__nav li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(211, 208, 208);
+    height: 1px;
+}
+
+#header__nav li a:hover:after {
+    width: 85%;
+}
+
+/* INDEX */
 
 #index__main{
     margin-top: 5vh;
@@ -11,9 +45,11 @@
     margin-bottom: 2rem;
 }
 
-#card__1, #card__2, #card__3, #card__4{
+#index__card1, #index__card2, #index__card3, #index__card4{
     background-color: #9b6ef1;
 }
+
+/* ABOUT */
 
 #about__text{
     text-align:justify;
@@ -23,11 +59,37 @@
     margin: 5vh;
 }
 
+/* CONTACTO */
+
 #contact__form{
     max-width: 700px;
     margin-bottom: 4vh;
 }
 
-#blog__1, #blog__2, #blog__3, #blog__4, #blog__5, #blog__6{
+#contact__btn{
+    background: #9b6ef1;
+    color: white;
+}
+
+/* BLOG */
+
+#blog__art1, #blog__art2, #blog__art3, #blog__art4, #blog__art5, #blog__art6{
     background-color: #9b6ef1;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+    #index__cards div div img{
+        max-width: 450px;
+    }
+    #about__img{
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 992px){
+    #header__nav li a:after{
+        display: none;
+    }
 }
