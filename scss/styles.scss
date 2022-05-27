@@ -1,0 +1,113 @@
+@import 'variables';
+
+.button{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-decoration: none;
+    background-color: #ff97d9;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.button:hover{
+    background-color: $mainColor;
+    color: white;
+}
+
+/* NAV MENU */
+
+#nav__background{
+    background-color: $mainColor;
+}
+
+#header__nav li{
+    a{
+    position: relative;
+    color: rgb(250, 247, 247);
+    }
+
+    & a:hover{
+        color: rgb(50, 48, 48);
+    }
+    
+    & a:after{
+        transition: all .4s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: rgb(211, 208, 208);
+        height: 1px;
+    }
+    & a:hover:after {
+        width: 85%;
+    }
+}
+
+/* FOOTER */
+
+.footer__background{
+    background-color: $mainColor;
+    
+    .footer__copyright{
+        background-color: rgba(0, 0, 0, 0.2)
+    }
+}
+
+/* INDEX */
+
+#index__main{
+    margin-top: 5vh;
+}
+
+#index__cards, #servicios__cards{
+    margin: 0rem 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ABOUT */
+
+#about__text{
+    text-align:justify;
+}
+
+#about__title{
+    margin: 5vh;
+}
+
+/* CONTACTO */
+
+#contact__form{
+    max-width: 700px;
+    margin-bottom: 4vh;
+
+    form div #contact__btn{
+        background: $mainColor;
+        color: white;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+    #index__cards div div img{
+        max-width: 450px;
+    }
+    #about__img{
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 992px){
+    #header__nav li a:after{
+        display: none;
+    }
+}
