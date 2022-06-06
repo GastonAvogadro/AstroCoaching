@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sesiones de coaching astrológico. Entrenamiento para búsqueda laboral. Reiki a distancia. Tarot evolutivo. Te ayudaré en la búsqueda de tu propósito">
+    <meta name="keywords"
+        content="COACHING ASTROLOGICO, ENTRENAMIENTO LABORAL, REIKI, TAROT, ASTROLOGIA, JULIETA AVOGADRO">
     <link rel="icon" href="./img/capricornio.png">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Julieta Avogadro</title>
@@ -15,29 +24,33 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" id="nav__background">
-            <div class="container-xl">
-                <a class="navbar-brand text-white" href="./index.html">julietaAvogadro</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/julietaAvogadro.png" class="nav__logo" alt="Julieta Avogadro">
+                </a>
+                <button class="nav__btn collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="header__nav">
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder" href="./index.html">INICIO</a>
+                            <a class="nav-link" href="./index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder" href="./pages/acerca-de-mi.html">ACERCA DE MI</a>
+                            <a class="nav-link" href="./pages/acerca-de-mi.html">ACERCA DE MI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder" href="./pages/servicios.html">SERVICIOS</a>
+                            <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder" href="./pages/blog.html">BLOG</a>
+                            <a class="nav-link" href="./pages/blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder" href="./pages/contacto.html">CONTACTO</a>
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +60,7 @@
 
     <main>
         <div class="container-xl" id="index__main">
-            <div class="d-flex justify-content-center">
+            <div>
                 <h1 class="display-4 fst-italic">Potenciá tu propósito</h1>
             </div>
             <img src="./img/expectrum.png" class="img-fluid" alt="Espectro colorido">
@@ -56,9 +69,9 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="index__cards">
             <div class="col">
                 <div class="card">
-                    <img src="./img/woman.jpg" class="card-img-top rounded mx-auto d-block" alt="Julieta">
+                    <img src="./img/woman.jpg" class="card-img-top rounded mx-auto d-block" alt="Julieta Avogadro">
                     <div class="card-body">
-                        <h5 class="card-title">Bienvenido/a a mi espacio!</h5>
+                        <h2 class="index__h2 card-title">Bienvenido/a a mi espacio!</h2>
                         <p class="card-text">Podés aprender más de mi ingresando aquí.</p>
                         <a href="./pages/acerca-de-mi.html" class="button">ACERCA DE MI</a>
                     </div>
@@ -69,7 +82,7 @@
                     <img src="./img/coaching.jpg" class="card-img-top rounded mx-auto d-block"
                         alt="Coaching astrológico">
                     <div class="card-body">
-                        <h5 class="card-title">Coaching astrológico vocacional</h5>
+                        <h2 class="index__h2 card-title">Coaching astrológico vocacional</h2>
                         <p class="card-text">Ingresá aquí para ver los objetivos que podemos lograr.</p>
                         <a href="./pages/servicios.html" class="button">COACHING
                             ASTROLÓGICO</a>
@@ -81,7 +94,7 @@
                     <img src="./img/busquedaLaboral.jpg" class="card-img-top rounded mx-auto d-block"
                         alt="Búsqueda laboral">
                     <div class="card-body">
-                        <h5 class="card-title">Entrenamiento para búsqueda laboral</h5>
+                        <h2 class="index__h2 card-title">Entrenamiento para búsqueda laboral</h2>
                         <p class="card-text">Para conseguir el trabajo que deseas ingresá aquí.</p>
                         <a href="./pages/servicios.html" class="button">BÚSQUEDA LABORAL</a>
                     </div>
@@ -89,9 +102,9 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./img/blog.jpg" class="card-img-top rounded mx-auto d-block" alt="Blog">
+                    <img src="./img/blog.jpg" class="card-img-top rounded mx-auto d-block" alt="Mi Blog">
                     <div class="card-body">
-                        <h5 class="card-title">Blog</h5>
+                        <h2 class="index__h2 card-title">Blog</h2>
                         <p class="card-text">No te pierdas el material nuevo que estoy subiendo al blog!</p>
                         <a href="./pages/blog.html" class="button">MI BLOG</a>
                     </div>
@@ -102,12 +115,20 @@
 
     <footer class="text-center text-white footer__background">
         <div class="container p-4 pb-0">
-            <section>
-                <p class="d-flex justify-content-center align-items-center">
-                    <span class="me-3">Podés hacer tu consulta aquí</span>
-                    <a href="./pages/contacto.html" class="btn btn-light" role="button">CONTACTO</a>
-                </p>
-            </section>
+            <div class="footer__socialMedia">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="bi bi-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Podés hacer tu consulta aquí</span>
+                <a href="./pages/contacto.html" class="footer__button" role="button">CONTACTO</a>
+            </p>
+
+        </div>
         </div>
         <div class="text-center p-3 footer__copyright">
             © 2022 Copyright
