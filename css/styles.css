@@ -106,7 +106,13 @@
     .main__container .main__backgroundImage .backgroundImage__mask {
       height: 40vh; }
   .main__container .index__section1 {
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__container .index__section1 .index__sesiones {
+      max-width: 100%; }
 
 .section__title h3 {
   display: flex;
@@ -134,17 +140,18 @@
       font-weight: 500; }
     .index__card .card-body .card-text {
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.4rem; }
 
 .index__card:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.17); }
 
-.index__section2 {
-  padding: 2rem 0;
-  background-color: #fafafa;
+.section2__background {
+  background-color: #f4f4f4;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb; }
+  .section2__background .index__section2 {
+    padding: 2rem 1rem; }
 
 .index__bio {
   display: flex;
@@ -153,25 +160,40 @@
   align-items: center; }
   .index__bio .bio__img {
     width: 300px;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    max-width: 100%; }
   .index__bio p {
     font-size: .9rem;
     line-height: 2rem; }
 
-.about__section1 {
+.about__section1,
+.sesiones__section1 {
   padding: 2rem 0; }
-  .about__section1 .about__bio {
+  .about__section1 .about__bio,
+  .about__section1 .sesiones__card,
+  .sesiones__section1 .about__bio,
+  .sesiones__section1 .sesiones__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .about__section1 .about__bio p {
+    .about__section1 .about__bio p,
+    .about__section1 .sesiones__card p,
+    .sesiones__section1 .about__bio p,
+    .sesiones__section1 .sesiones__card p {
       font-size: .9rem;
+      font-weight: 400;
       line-height: 2rem;
       padding: .3rem;
       margin: 0; }
-    .about__section1 .about__bio img {
+    .about__section1 .about__bio img,
+    .about__section1 .sesiones__card img,
+    .sesiones__section1 .about__bio img,
+    .sesiones__section1 .sesiones__card img {
       padding-bottom: 1rem; }
+  .about__section1 .sesiones__card p,
+  .sesiones__section1 .sesiones__card p {
+    padding-bottom: 1.5rem; }
 
 .button, .footer__button {
   display: inline-block;
@@ -198,15 +220,59 @@
 
 #contact__form {
   max-width: 700px;
-  margin-bottom: 4vh; }
+  margin: 2rem auto;
+  padding: 1rem; }
   #contact__form form div #contact__btn {
     background: #9b6ef1;
     color: white; }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .main__container .index__section1,
-  .main__container .index__section2 {
-    padding: 2rem 0; } }
+.postcard {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 2rem 0;
+  overflow: hidden;
+  position: relative; }
+  .postcard .postcard__title {
+    font-size: 1.75rem; }
+  .postcard .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative; }
+  .postcard .postcard__img_link {
+    display: contents; }
+  .postcard .postcard__bar {
+    width: 50px;
+    height: .2rem;
+    margin-bottom: .8rem;
+    border-radius: 5px;
+    transition: width 0.2s ease;
+    background-color: #9b6ef1; }
+  .postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative; }
+    .postcard .postcard__text .button, .postcard .postcard__text .footer__button {
+      margin-bottom: 1rem; }
+  .postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+    font-size: .9rem; }
+  .postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    border-radius: 10px;
+    background-image: linear-gradient(-30deg, #ff97d9, transparent 50%); }
+  .postcard:hover .postcard__bar {
+    width: 100px; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main__container .index__section1,
@@ -216,19 +282,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .about__text {
     width: 65%; } }
-
-@media (min-width: 1200px) {
-  .about__text {
-    width: 45%; } }
-
-@media (min-width: 992px) {
-  .main__container .index__section1,
-  .main__container .index__section2 {
-    padding: 4rem 0; }
-  .about__section1 .about__bio {
-    flex-direction: row; }
-    .about__section1 .about__bio .about__img {
-      order: 1; } }
 
 @media (min-width: 768px) {
   .section__title h3 {
@@ -241,19 +294,55 @@
     flex-direction: row;
     justify-content: space-evenly; }
     .index__bio .bio__img {
-      order: 1; }
-      .index__bio .bio__img img {
-        width: 400px; }
+      order: 1;
+      width: 400px; }
     .index__bio div {
       width: 40%; }
       .index__bio div p {
         line-height: 2.5rem;
-        font-size: 1rem; } }
+        font-size: 1rem; }
+  .about__section1 .about__bio p,
+  .about__section1 .sesiones__card p,
+  .sesiones__section1 .about__bio p,
+  .sesiones__section1 .sesiones__card p {
+    font-size: 1rem; }
+  .postcard {
+    flex-wrap: inherit; }
+    .postcard .postcard__title {
+      font-size: 2rem; }
+    .postcard .postcard__preview-txt {
+      font-size: 1rem; }
+    .postcard .postcard__img {
+      max-width: 300px;
+      max-height: 100%;
+      transition: transform 0.3s ease; }
+    .postcard .postcard__text {
+      padding: 3rem;
+      width: 100%; }
+    .postcard:hover .postcard__img {
+      transform: scale(1.1); }
+    .postcard:nth-child(odd) {
+      flex-direction: row-reverse; } }
 
-@media (max-width: 576px) {
-  * {
-    overflow-x: hidden; }
-  .index__card {
-    max-width: 95%;
-    margin-right: auto;
-    margin-left: auto; } }
+@media (min-width: 992px) {
+  .main__container .index__section1,
+  .main__container .index__section2 {
+    padding: 4rem 0; }
+  .about__section1 .about__bio {
+    flex-direction: row; }
+    .about__section1 .about__bio .about__img {
+      order: 1; }
+  .sesiones__section1 .sesiones__card {
+    display: block; }
+    .sesiones__section1 .sesiones__card .section__title h3 {
+      font-size: 1.2rem; }
+    .sesiones__section1 .sesiones__card .section__title .underline {
+      margin-bottom: 1.5rem; } }
+
+@media (max-width: 991px) {
+  #header__nav li a:after {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .about__text {
+    width: 45%; } }
