@@ -104,7 +104,8 @@
     background-image: url(../img/cielo.jpg);
     height: 40vh; }
     .main__container .main__backgroundImage .backgroundImage__mask {
-      height: 40vh; }
+      height: 40vh;
+      background-color: rgba(0, 0, 0, 0.3); }
   .main__container .index__section1 {
     padding: 2rem 0;
     display: flex;
@@ -114,13 +115,14 @@
     .main__container .index__section1 .index__sesiones {
       max-width: 100%; }
 
-.section__title h3 {
+.section__title h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 500; }
+  font-weight: 500;
+  text-align: center; }
 
 .section__title .underline {
   border-top: 0.15rem solid #9b6ef1;
@@ -131,7 +133,8 @@
 .index__card {
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: box-shadow .25s; }
+  transition: box-shadow .25s;
+  margin-bottom: 1.6rem; }
   .index__card .card-body {
     text-align: center; }
     .index__card .card-body .card-title {
@@ -184,16 +187,15 @@
       font-size: .9rem;
       font-weight: 400;
       line-height: 2rem;
-      padding: .3rem;
-      margin: 0; }
+      padding: .3rem; }
     .about__section1 .about__bio img,
     .about__section1 .sesiones__card img,
     .sesiones__section1 .about__bio img,
     .sesiones__section1 .sesiones__card img {
       padding-bottom: 1rem; }
-  .about__section1 .sesiones__card p,
-  .sesiones__section1 .sesiones__card p {
-    padding-bottom: 1.5rem; }
+  .about__section1 .sesiones__card,
+  .sesiones__section1 .sesiones__card {
+    padding-bottom: 1.2rem; }
 
 .button, .footer__button {
   display: inline-block;
@@ -205,7 +207,8 @@
   border: 1px solid transparent;
   padding: .375rem .75rem;
   font-size: 1rem;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+  transition: .3s; }
 
 .button:hover, .footer__button:hover {
   background-color: #9b6ef1;
@@ -276,15 +279,19 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main__container .index__section1,
-  .main__container .index__section2 {
-    padding: 3rem 0; } }
+  .main__container .index__section2,
+  .main__container .about__section1,
+  .main__container .sesiones__section1 {
+    padding: 3rem 0; }
+  .main__container .sesiones__card p {
+    padding-bottom: 2rem; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .about__text {
     width: 65%; } }
 
 @media (min-width: 768px) {
-  .section__title h3 {
+  .section__title h2 {
     font-size: 2rem; }
   .section__title .underline {
     border-top: 0.2rem solid #9b6ef1;
@@ -326,7 +333,9 @@
 
 @media (min-width: 992px) {
   .main__container .index__section1,
-  .main__container .index__section2 {
+  .main__container .index__section2,
+  .main__container .about__section1,
+  .main__container .sesiones__section1 {
     padding: 4rem 0; }
   .about__section1 .about__bio {
     flex-direction: row; }
@@ -334,10 +343,12 @@
       order: 1; }
   .sesiones__section1 .sesiones__card {
     display: block; }
-    .sesiones__section1 .sesiones__card .section__title h3 {
-      font-size: 1.2rem; }
+    .sesiones__section1 .sesiones__card .section__title h2 {
+      font-size: 1.4rem; }
     .sesiones__section1 .sesiones__card .section__title .underline {
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1.5rem; }
+  .postcard {
+    margin-top: 3.5rem; } }
 
 @media (max-width: 991px) {
   #header__nav li a:after {
