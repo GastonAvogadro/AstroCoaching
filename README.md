@@ -1,4 +1,6 @@
-# Proyecto final para Desarrollo Web
+# Proyecto final - Desarrollo Web
 En este sitio utilicé: HTML, CSS, SASS, BOOTSTRAP.
+GitHub Pages: https://gastonavogadro.github.io/JuliAvogadro/
 
-https://www.linkedin.com/in/gaston-avogadro/
+
+LinkedIn: https://www.linkedin.com/in/gaston-avogadro/
