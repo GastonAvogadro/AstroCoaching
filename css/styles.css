@@ -114,6 +114,8 @@
     align-items: center; }
     .main__container .index__section1 .index__sesiones {
       max-width: 100%; }
+      .main__container .index__section1 .index__sesiones article {
+        margin-bottom: 1rem; }
 
 .section__title h2 {
   display: flex;
