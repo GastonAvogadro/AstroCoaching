@@ -1,5 +1,6 @@
-# Proyecto final - Desarrollo Web
-En este sitio utilicé: HTML, CSS, SASS, BOOTSTRAP.
-GitHub Pages: https://gastonavogadro.github.io/AstroCoaching/
+# Sitio web para coach astrológica - Proyecto final de Desarrollo Web
 
-LinkedIn: https://www.linkedin.com/in/gaston-avogadro/
+https://astrocoaching.netlify.app/
+
+En este sitio utilicé: HTML, CSS, SASS, BOOTSTRAP.
+
