@@ -1,6 +1,18 @@
-# Sitio web para coach astrológica - Proyecto final de Desarrollo Web
+# Sitio web Astro Coaching
 
-https://astrocoaching.netlify.app/
+Sitio desarrollado para una coach astrológica. Es el proyecto final que realicé para el curso de desarrollo web en Coderhouse
+donde aplicamos todo lo visto de HTML, SASS y Bootstrap (sin Javascript puro).
 
-En este sitio utilicé: HTML, CSS, SASS, BOOTSTRAP.
+### Link al sitio
+### https://astrocoaching.netlify.app/
 
+### Instalación
+
+```sh
+npm install
+```
+### Tech: 
+
+- HTML
+- SASS
+- Bootstrap
